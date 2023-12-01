@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Benjamin Yan, SCUT, LIC=UJWP0-BI5K4-ARQXW-QDJW5-56IJ5-DIQTH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\大学\电赛\LORD\Frontend v2.0\Projects\MDK-ARM\atk_f103.uvprojx
+Project File Date:  11/28/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
+Build target 'ATK-MW8266D'
+Note: source file '..\..\Drivers\BSP\LCD\lcd.c' - object file renamed from '..\..\Output\lcd.o' to '..\..\Output\lcd_1.o'.
+compiling main.c...
+..\..\User\tcp.h(1): warning:  #1295-D: Deprecated declaration connect_wifi - give arg types
+  void connect_wifi(); 
+..\..\User\lcd.h(1): warning:  #1295-D: Deprecated declaration lcd_scale_init - give arg types
+  void lcd_scale_init();								//标尺初始化
+..\..\User\lcd.h(3): warning:  #1295-D: Deprecated declaration lcd_sections_init - give arg types
+  void lcd_sections_init();							//四个区域的划分线初始化
+..\..\User\lcd.h(4): warning:  #1295-D: Deprecated declaration lcd_logo_init - give arg types
+  void lcd_logo_init();								//LOGO初始化
+..\..\User\lcd.h(5): warning:  #1295-D: Deprecated declaration lcd_char_init - give arg types
+  void lcd_char_init();								//文字初始化
+..\..\User\lcd.h(6): warning:  #1295-D: Deprecated declaration lcd_buttons_init - give arg types
+  void lcd_buttons_init();							//按钮初始化
+..\..\User\lcd.h(8): warning:  #1295-D: Deprecated declaration lcd_spectrum_init - give arg types
+  void lcd_spectrum_init();							//频谱初始化
+..\..\User\lcd.h(11): warning:  #1295-D: Deprecated declaration lcd_stave_init - give arg types
+  void lcd_stave_init();								//五线谱初始化
+..\..\User\lcd.h(14): warning:  #1295-D: Deprecated declaration lcd_stave_update - give arg types
+  void lcd_stave_update();							//滚动五线谱
+..\..\User\lcd.h(16): warning:  #1295-D: Deprecated declaration lcd_note_init - give arg types
+  void lcd_note_init();								//琴键初始化
+..\..\User\main.c(22): warning:  #1295-D: Deprecated declaration search_notes - give arg types
+  void search_notes();						//匹配结果中的音符
+..\..\User\main.c(147): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\User\main.c: 12 warnings, 0 errors
+linking...
+..\..\Output\atk_f103.axf: Warning: L6096W: String merge section lcd.o(.conststring) is not null-terminated.
+Program Size: Code=35538 RO-data=40494 RW-data=36 ZI-data=17180  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+"..\..\Output\atk_f103.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\MDK\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
