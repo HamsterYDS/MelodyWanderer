@@ -117,14 +117,17 @@ void search_notes(){
 		}
 	}
 	
+	int tmp=index;
 	for(int i=2;i<=4;i++)
 		for(int j=-1;j<=1;j++)
-			if(fft_out[index/i+j]>15)
-				index=index/i+j;
+			if(fft_out[tmp/i+j]>15 && tmp/i+j>10)
+				index=tmp/i+j;
 	
 	if(index==16 || index==17) lcd_stave_note(0);
 	if(index==18 || index==19) lcd_stave_note(1);
-	if(index==21) lcd_stave_note(2);
+	if(index==21) {
+		if(fft_out[22]>maxMag*0.85 || fft_out[23]>maxMag*0.85) lcd_stave_note(3);
+		else lcd_stave_note(2);
 	if(index==22 || index==23) lcd_stave_note(3);
 	if(index==25) lcd_stave_note(4);
 	if(index==28 || index==29) lcd_stave_note(5);

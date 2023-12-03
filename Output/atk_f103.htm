@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\atk_f103.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\atk_f103.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 13:12:11 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 20:24:13 2023
 <BR><P>
 <H3>Maximum Stack Usage =       6452 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1822,9 +1822,7 @@ Global Symbols
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_draw_touch_point
 </UL>
 
@@ -1861,7 +1859,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
 </UL>
-<BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_spectrum_set_height
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_spectrum_set_height
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_spectrum_init
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_init
@@ -2204,8 +2204,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[140]"></a>search_notes</STRONG> (Thumb, 352 bytes, Stack size 24 bytes, main.o(i.search_notes))
-<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = search_notes &rArr; lcd_stave_note &rArr; lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
+<P><STRONG><a name="[140]"></a>search_notes</STRONG> (Thumb, 364 bytes, Stack size 32 bytes, main.o(i.search_notes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = search_notes &rArr; lcd_stave_note &rArr; lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_note
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
@@ -2236,18 +2236,18 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cmplx_mag_f32
 </UL>
 
-<P><STRONG><a name="[fd]"></a>start</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd.o(i.start))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = start &rArr; lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
+<P><STRONG><a name="[fd]"></a>start</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, lcd.o(i.start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = start &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 </UL>
 
-<P><STRONG><a name="[fe]"></a>stop</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd.o(i.stop))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = stop &rArr; lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
+<P><STRONG><a name="[fe]"></a>stop</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd.o(i.stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = stop &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main

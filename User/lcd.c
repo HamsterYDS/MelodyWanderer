@@ -243,10 +243,14 @@ void clear(){
 } 
 
 void start(){
-	lcd_draw_circle(175,90,5,GREEN);
+	for(int pitch=0;pitch<13;pitch++){
+		stave[pitch][0]=0;
+		stave_colored[pitch][0]=0;
+	}
+	lcd_draw_rectangle(165,80,185,100,GREEN);
 	sta=1;
 }
 void stop(){
-	lcd_draw_circle(175,90,5,RED);
+	lcd_draw_rectangle(165,80,185,100,RED);
 	sta=0;
 }
