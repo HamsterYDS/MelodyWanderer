@@ -161,22 +161,9 @@ void lcd_stave_init(){
 } 
 
 void lcd_stave_note(int pitch){
-	if(pitch>=7 && note_stamp[pitch-7]<=1){
-		lcd_stave_note(pitch-7);
-		return;
-	}
-	/*int k=(pitch==6 || pitch==11)?4:3;
-	if(note_stamp[pitch]<=k && note_stamp[pitch]>=1){
-		for(int i=1;i<=k &&!stave_colored[pitch][i];i++){
-			stave[pitch][i]=1;
-			lcd_stave_line(pitch,i,1);
-		}
-	}*/
 	lcd_note_press(pitch,1);
-	if(pitch<13){
-		note_stamp[pitch]=0; 
+	if(pitch<13)
 		stave[pitch][0]=1;
-	}
 }
 
 int pitch_color[13]={0xcfe0,0xbfe2,0xafe5,0x9fc8,0x8fca,0x7fad,0x6fb0,0x57b2,0x4795,0x3798,0x277a,0x177d,0x077f};

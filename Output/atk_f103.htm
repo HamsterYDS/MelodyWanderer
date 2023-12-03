@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\atk_f103.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\atk_f103.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 12:27:41 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 13:02:51 2023
 <BR><P>
 <H3>Maximum Stack Usage =       6452 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -21,7 +21,6 @@ Mutually Recursive functions
 </H3> <LI><a href="#[c]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c]">PendSV_Handler</a><BR>
  <LI><a href="#[d]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[d]">SysTick_Handler</a><BR>
  <LI><a href="#[20]">ADC1_2_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[20]">ADC1_2_IRQHandler</a><BR>
- <LI><a href="#[133]">lcd_stave_note</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[133]">lcd_stave_note</a><BR>
 </UL>
 <P>
 <H3>
@@ -2093,15 +2092,12 @@ Global Symbols
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_update
 </UL>
 
-<P><STRONG><a name="[133]"></a>lcd_stave_note</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, lcd.o(i.lcd_stave_note))
-<BR><BR>[Stack]<UL><LI>Max Depth = 108 + In Cycle
-<LI>Call Chain = lcd_stave_note &rArr;  lcd_stave_note (Cycle)
+<P><STRONG><a name="[133]"></a>lcd_stave_note</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd.o(i.lcd_stave_note))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = lcd_stave_note &rArr; lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_note
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
+<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_note
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_notes
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_notes
 </UL>
 
 <P><STRONG><a name="[134]"></a>lcd_stave_update</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, lcd.o(i.lcd_stave_update))
@@ -2205,8 +2201,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[140]"></a>search_notes</STRONG> (Thumb, 502 bytes, Stack size 24 bytes, main.o(i.search_notes))
-<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = search_notes &rArr; lcd_stave_note &rArr;  lcd_stave_note (Cycle)
+<P><STRONG><a name="[140]"></a>search_notes</STRONG> (Thumb, 352 bytes, Stack size 24 bytes, main.o(i.search_notes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = search_notes &rArr; lcd_stave_note &rArr; lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_note
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press

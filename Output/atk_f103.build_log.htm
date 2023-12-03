@@ -29,6 +29,42 @@ Project File Date:  12/03/2023
 Build target 'ATK-MW8266D'
 Note: source file '..\..\Drivers\BSP\LCD\lcd.c' - object file renamed from '..\..\Output\lcd.o' to '..\..\Output\lcd_1.o'.
 Note: source file '..\..\Drivers\BSP\TOUCH\touch.c' - object file renamed from '..\..\Output\touch.o' to '..\..\Output\touch_1.o'.
+compiling main.c...
+..\..\User\tcp.h(1): warning:  #1295-D: Deprecated declaration connect_wifi - give arg types
+  void connect_wifi(); 
+..\..\User\touch.h(1): warning:  #1295-D: Deprecated declaration ctp_init - give arg types
+  void ctp_init(); 
+..\..\User\touch.h(2): warning:  #1295-D: Deprecated declaration ctp_scan - give arg types
+  void ctp_scan();
+..\..\User\lcd.h(1): warning:  #1295-D: Deprecated declaration lcd_scale_init - give arg types
+  void lcd_scale_init();								//标尺初始化
+..\..\User\lcd.h(3): warning:  #1295-D: Deprecated declaration lcd_sections_init - give arg types
+  void lcd_sections_init();							//四个区域的划分线初始化
+..\..\User\lcd.h(4): warning:  #1295-D: Deprecated declaration lcd_logo_init - give arg types
+  void lcd_logo_init();								//LOGO初始化
+..\..\User\lcd.h(5): warning:  #1295-D: Deprecated declaration lcd_char_init - give arg types
+  void lcd_char_init();								//文字初始化
+..\..\User\lcd.h(6): warning:  #1295-D: Deprecated declaration lcd_buttons_init - give arg types
+  void lcd_buttons_init();							//按钮初始化
+..\..\User\lcd.h(8): warning:  #1295-D: Deprecated declaration lcd_spectrum_init - give arg types
+  void lcd_spectrum_init();							//频谱初始化
+..\..\User\lcd.h(11): warning:  #1295-D: Deprecated declaration lcd_stave_init - give arg types
+  void lcd_stave_init();								//五线谱初始化
+..\..\User\lcd.h(14): warning:  #1295-D: Deprecated declaration lcd_stave_update - give arg types
+  void lcd_stave_update();							//滚动五线谱
+..\..\User\lcd.h(16): warning:  #1295-D: Deprecated declaration lcd_note_init - give arg types
+  void lcd_note_init();								//琴键初始化
+..\..\User\lcd.h(19): warning:  #1295-D: Deprecated declaration clear - give arg types
+  void clear();
+..\..\User\lcd.h(20): warning:  #1295-D: Deprecated declaration start - give arg types
+  void start();
+..\..\User\lcd.h(21): warning:  #1295-D: Deprecated declaration stop - give arg types
+  void stop();
+..\..\User\main.c(23): warning:  #1295-D: Deprecated declaration search_notes - give arg types
+  void search_notes();						//匹配结果中的音符
+..\..\User\main.c(139): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\User\main.c: 17 warnings, 0 errors
 compiling lcd.c...
 ..\..\User\lcd.h(1): warning:  #1295-D: Deprecated declaration lcd_scale_init - give arg types
   void lcd_scale_init();								//标尺初始化
@@ -57,10 +93,10 @@ compiling lcd.c...
 ..\..\User\lcd.c: 12 warnings, 0 errors
 linking...
 ..\..\Output\atk_f103.axf: Warning: L6096W: String merge section lcd.o(.conststring) is not null-terminated.
-Program Size: Code=48226 RO-data=55798 RW-data=256 ZI-data=17184  
+Program Size: Code=48026 RO-data=55798 RW-data=256 ZI-data=17184  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-"..\..\Output\atk_f103.axf" - 0 Error(s), 13 Warning(s).
+"..\..\Output\atk_f103.axf" - 0 Error(s), 30 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -73,7 +109,7 @@ Package Vendor: Keil
   D:\MDK\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

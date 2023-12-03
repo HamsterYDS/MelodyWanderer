@@ -103,38 +103,23 @@ int main(void){
     }
 }
 void search_notes(){	
-	for(int i=0;i<14;i++){
-		note_stamp[i]++;
-		if(note_stamp[i]>=2){
+	for(int i=0;i<14;i++)
+		if(note_stamp[i]++>=1)
 			lcd_note_press(i,0);
-		}
-	}
 	 
 	int index=-1;
 	int maxMag=-1;
 	for(int i=16;i<65;i++){
-		if(fft_out[i]>=40 && maxMag<=fft_out[i]){
+		if(fft_out[i]>=30 && maxMag<=fft_out[i]){
 			maxMag=fft_out[i];
 			index=i;
 		}
 	}
-	int noise_cnt=0;
-	for(int i=5;i<16;i++){
-		if(fft_out[i]>=15)
-			noise_cnt++;
-	}
-	if(fft_out[index]<=50 && noise_cnt>=5)
-		return;
 	
-	if(index!=25 && index != 22 && index != 23
-				&& index != 18 && index != 19 && fft_out[21] > 30)
-		index=21;
-	if((index==50 || index==51 || index==33 || index==34) && (fft_out[16] > 30 || fft_out[17] > 30))
-		index=16;
-	if((index==37 || index==38 || index==21) && (fft_out[18] > 30 || fft_out[19] > 30))
-		index=18;
-	if((index==56 || index==57) && (fft_out[28] > 30 || fft_out[29] > 30))
-		index=28;
+	for(int i=2;i<=4;i++)
+		for(int j=-1;j<=1;j++)
+			if(fft_out[index/i+j]>15)
+				index=index/i+j;
 	
 	if(index==16 || index==17) lcd_stave_note(0);
 	if(index==18 || index==19) lcd_stave_note(1);
