@@ -28,9 +28,7 @@ Project File Date:  11/28/2023
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
 Build target 'ATK-MW8266D'
 Note: source file '..\..\Drivers\BSP\LCD\lcd.c' - object file renamed from '..\..\Output\lcd.o' to '..\..\Output\lcd_1.o'.
-compiling main.c...
-..\..\User\tcp.h(1): warning:  #1295-D: Deprecated declaration connect_wifi - give arg types
-  void connect_wifi(); 
+compiling lcd.c...
 ..\..\User\lcd.h(1): warning:  #1295-D: Deprecated declaration lcd_scale_init - give arg types
   void lcd_scale_init();								//标尺初始化
 ..\..\User\lcd.h(3): warning:  #1295-D: Deprecated declaration lcd_sections_init - give arg types
@@ -49,17 +47,13 @@ compiling main.c...
   void lcd_stave_update();							//滚动五线谱
 ..\..\User\lcd.h(16): warning:  #1295-D: Deprecated declaration lcd_note_init - give arg types
   void lcd_note_init();								//琴键初始化
-..\..\User\main.c(22): warning:  #1295-D: Deprecated declaration search_notes - give arg types
-  void search_notes();						//匹配结果中的音符
-..\..\User\main.c(147): warning:  #1-D: last line of file ends without a newline
-  }
-..\..\User\main.c: 12 warnings, 0 errors
+..\..\User\lcd.c: 9 warnings, 0 errors
 linking...
 ..\..\Output\atk_f103.axf: Warning: L6096W: String merge section lcd.o(.conststring) is not null-terminated.
-Program Size: Code=35538 RO-data=40494 RW-data=36 ZI-data=17180  
+Program Size: Code=35682 RO-data=43302 RW-data=172 ZI-data=17180  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-"..\..\Output\atk_f103.axf" - 0 Error(s), 13 Warning(s).
+"..\..\Output\atk_f103.axf" - 0 Error(s), 10 Warning(s).
 
 <h2>Software Packages used:</h2>
 

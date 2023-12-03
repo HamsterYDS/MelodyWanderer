@@ -3,9 +3,9 @@
 <title>Static Call Graph - [..\..\Output\atk_f103.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\atk_f103.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Nov 28 21:03:21 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Dec 01 13:29:07 2023
 <BR><P>
-<H3>Maximum Stack Usage =       3628 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       6452 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 <P>
@@ -235,7 +235,7 @@ Global Symbols
 <P><STRONG><a name="[134]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[5d]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 3628 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 6452 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1191,8 +1191,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c7]"></a>lcd_char_init</STRONG> (Thumb, 522 bytes, Stack size 3272 bytes, lcd.o(i.lcd_char_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 3372<LI>Call Chain = lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
+<P><STRONG><a name="[c7]"></a>lcd_char_init</STRONG> (Thumb, 678 bytes, Stack size 6096 bytes, lcd.o(i.lcd_char_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 6196<LI>Call Chain = lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
@@ -1400,7 +1400,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_dir
 </UL>
 
-<P><STRONG><a name="[e4]"></a>lcd_sections_init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lcd.o(i.lcd_sections_init))
+<P><STRONG><a name="[e4]"></a>lcd_sections_init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lcd.o(i.lcd_sections_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = lcd_sections_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
@@ -1418,7 +1418,7 @@ Global Symbols
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
 </UL>
 
-<P><STRONG><a name="[e5]"></a>lcd_spectrum_init</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, lcd.o(i.lcd_spectrum_init))
+<P><STRONG><a name="[e5]"></a>lcd_spectrum_init</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, lcd.o(i.lcd_spectrum_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = lcd_spectrum_init &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
@@ -1426,7 +1426,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[e6]"></a>lcd_spectrum_set_height</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, lcd.o(i.lcd_spectrum_set_height))
+<P><STRONG><a name="[e6]"></a>lcd_spectrum_set_height</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, lcd.o(i.lcd_spectrum_set_height))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = lcd_spectrum_set_height &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
@@ -1446,7 +1446,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
 
-<P><STRONG><a name="[e8]"></a>lcd_stave_init</STRONG> (Thumb, 366 bytes, Stack size 936 bytes, lcd.o(i.lcd_stave_init))
+<P><STRONG><a name="[e8]"></a>lcd_stave_init</STRONG> (Thumb, 310 bytes, Stack size 936 bytes, lcd.o(i.lcd_stave_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1036<LI>Call Chain = lcd_stave_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
@@ -1455,7 +1455,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[e9]"></a>lcd_stave_line</STRONG> (Thumb, 208 bytes, Stack size 40 bytes, lcd.o(i.lcd_stave_line))
+<P><STRONG><a name="[e9]"></a>lcd_stave_line</STRONG> (Thumb, 214 bytes, Stack size 40 bytes, lcd.o(i.lcd_stave_line))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = lcd_stave_line &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
@@ -1534,7 +1534,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5e]"></a>main</STRONG> (Thumb, 482 bytes, Stack size 256 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 3628 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 6452 + Unknown Stack Size
 <LI>Call Chain = main &rArr; lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_init
