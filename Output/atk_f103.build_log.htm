@@ -22,12 +22,13 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\大学\电赛\LORD\Frontend v2.0\Projects\MDK-ARM\atk_f103.uvprojx
-Project File Date:  11/28/2023
+Project File Date:  12/03/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
 Build target 'ATK-MW8266D'
 Note: source file '..\..\Drivers\BSP\LCD\lcd.c' - object file renamed from '..\..\Output\lcd.o' to '..\..\Output\lcd_1.o'.
+Note: source file '..\..\Drivers\BSP\TOUCH\touch.c' - object file renamed from '..\..\Output\touch.o' to '..\..\Output\touch_1.o'.
 compiling lcd.c...
 ..\..\User\lcd.h(1): warning:  #1295-D: Deprecated declaration lcd_scale_init - give arg types
   void lcd_scale_init();								//标尺初始化
@@ -47,13 +48,19 @@ compiling lcd.c...
   void lcd_stave_update();							//滚动五线谱
 ..\..\User\lcd.h(16): warning:  #1295-D: Deprecated declaration lcd_note_init - give arg types
   void lcd_note_init();								//琴键初始化
-..\..\User\lcd.c: 9 warnings, 0 errors
+..\..\User\lcd.h(19): warning:  #1295-D: Deprecated declaration clear - give arg types
+  void clear();
+..\..\User\lcd.h(20): warning:  #1295-D: Deprecated declaration start - give arg types
+  void start();
+..\..\User\lcd.h(21): warning:  #1295-D: Deprecated declaration stop - give arg types
+  void stop();
+..\..\User\lcd.c: 12 warnings, 0 errors
 linking...
 ..\..\Output\atk_f103.axf: Warning: L6096W: String merge section lcd.o(.conststring) is not null-terminated.
-Program Size: Code=35682 RO-data=43302 RW-data=172 ZI-data=17180  
+Program Size: Code=48226 RO-data=55798 RW-data=256 ZI-data=17184  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-"..\..\Output\atk_f103.axf" - 0 Error(s), 10 Warning(s).
+"..\..\Output\atk_f103.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -66,7 +73,7 @@ Package Vendor: Keil
   D:\MDK\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

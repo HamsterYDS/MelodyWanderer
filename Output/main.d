@@ -70,5 +70,6 @@
 ..\..\output\main.o: D:\MDK\ARM\ARMCC\Bin\..\include\math.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/TIMER/gtim.h
 ..\..\output\main.o: ..\..\User\tcp.h
+..\..\output\main.o: ..\..\User\touch.h
 ..\..\output\main.o: ..\..\User\lcd.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/LED/led.h

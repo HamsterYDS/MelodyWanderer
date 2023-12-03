@@ -418,6 +418,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\User\tcp.c</FilePath>
             </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\touch.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -562,6 +567,36 @@
               <FileName>gtim.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Drivers\BSP\TIMER\gtim.c</FilePath>
+            </File>
+            <File>
+              <FileName>24cxx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\24CXX\24cxx.c</FilePath>
+            </File>
+            <File>
+              <FileName>myiic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\IIC\myiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>ctiic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\TOUCH\ctiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>ft5206.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\TOUCH\ft5206.c</FilePath>
+            </File>
+            <File>
+              <FileName>gt9xxx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\TOUCH\gt9xxx.c</FilePath>
+            </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\TOUCH\touch.c</FilePath>
             </File>
           </Files>
         </Group>

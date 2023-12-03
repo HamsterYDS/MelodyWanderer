@@ -6,6 +6,7 @@
 #include "./CMSIS/DSP/Include/arm_math.h"
 #include "./BSP/TIMER/gtim.h"
 #include "tcp.h"
+#include "touch.h"
 #include "lcd.h"
 #include "./BSP/LED/led.h"
 
@@ -26,6 +27,8 @@ extern int cnt;								//计数器
 extern int bar_heights[21];
 extern int note_stamp[14];
 
+extern int state; 							//当前状态，暂停/开始
+
 int main(void){
     HAL_Init();								//初始化HAL库
     sys_stm32_clock_init(RCC_PLL_MUL9);		//初始化时钟
@@ -33,7 +36,7 @@ int main(void){
 	usart_init(115200); 					//初始化串口
 	lcd_init(); 							//初始化LCD显示屏
     led_init();                     	    /* 初始化LED */
-	
+
 	lcd_clear(BLACK);
 	//lcd_scale_debug();
 	lcd_sections_init();
@@ -43,6 +46,8 @@ int main(void){
 	lcd_logo_init();
 	lcd_char_init();
 	lcd_note_init();
+	
+	ctp_init();
 	
 	//connect_wifi();
 	
@@ -90,7 +95,9 @@ int main(void){
 			arm_cfft_radix4_f32(&scfft, fft_in); 
 			arm_cmplx_mag_f32(fft_in, fft_out, 1024);
 			search_notes();
-			lcd_stave_update();  					//五线谱的动画
+			ctp_scan();
+			if(state)
+				lcd_stave_update();  				//五线谱的动画
 			cnt=0;									//重新启动ADC采集schedule
 		}
     }

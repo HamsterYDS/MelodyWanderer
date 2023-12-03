@@ -16,4 +16,6 @@ void lcd_stave_update();							//滚动五线谱
 void lcd_note_init();								//琴键初始化
 void lcd_note_press(int pitch,int press);			//将某个琴键显示为按下 
 
-
+void clear();
+void start();
+void stop();

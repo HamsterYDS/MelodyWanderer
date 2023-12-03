@@ -234,8 +234,30 @@ void lcd_note_init(){
 	}
 }
 
+int sta=0;
+
 void lcd_note_press(int pitch,int press){
+	if(!sta) return;
 	int x=326,y=note_pos[pitch%7];
 	if(pitch>=7) x+=90;
 	lcd_draw_rectangle(x+9,y-3,x+15,y-9,press?DARKBLUE:WHITE);
+}
+
+void clear(){
+	for(int pitch=0;pitch<13;pitch++){
+		for(int index=1;index<75;index++){
+			lcd_stave_line(pitch,index,0);
+			stave[pitch][index]=0;
+			stave_colored[pitch][index]=0;
+		}
+		lcd_note_press(pitch,0);
+	}
+	lcd_note_press(13,0);
+} 
+
+void start(){
+	sta=1;
+}
+void stop(){
+	sta=0;
 }
