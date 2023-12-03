@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\atk_f103.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\atk_f103.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 13:02:51 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 13:12:11 2023
 <BR><P>
 <H3>Maximum Stack Usage =       6452 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1526,9 +1526,9 @@ Global Symbols
 <P><STRONG><a name="[fa]"></a>ctp_scan</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, touch.o(i.ctp_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = ctp_scan &rArr; clear &rArr; lcd_stave_line &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
 </UL>
@@ -1822,7 +1822,9 @@ Global Symbols
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_draw_touch_point
 </UL>
 
@@ -2159,12 +2161,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6e]"></a>main</STRONG> (Thumb, 496 bytes, Stack size 256 bytes, main.o(i.main))
+<P><STRONG><a name="[6e]"></a>main</STRONG> (Thumb, 500 bytes, Stack size 256 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 6452 + Unknown Stack Size
 <LI>Call Chain = main &rArr; lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_init
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_stm32_clock_init
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_update
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_init
@@ -2233,12 +2236,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cmplx_mag_f32
 </UL>
 
-<P><STRONG><a name="[fd]"></a>start</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lcd.o(i.start))
-<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<P><STRONG><a name="[fd]"></a>start</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd.o(i.start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = start &rArr; lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 </UL>
 
-<P><STRONG><a name="[fe]"></a>stop</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lcd.o(i.stop))
-<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<P><STRONG><a name="[fe]"></a>stop</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd.o(i.stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = stop &rArr; lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[136]"></a>sys_stm32_clock_init</STRONG> (Thumb, 86 bytes, Stack size 72 bytes, sys.o(i.sys_stm32_clock_init))

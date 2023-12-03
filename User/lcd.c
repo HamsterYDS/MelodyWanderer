@@ -243,8 +243,10 @@ void clear(){
 } 
 
 void start(){
+	lcd_draw_circle(175,90,5,GREEN);
 	sta=1;
 }
 void stop(){
+	lcd_draw_circle(175,90,5,RED);
 	sta=0;
 }

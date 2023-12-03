@@ -46,6 +46,7 @@ int main(void){
 	lcd_logo_init();
 	lcd_char_init();
 	lcd_note_init();
+	stop();
 	
 	ctp_init();
 	
