@@ -231,6 +231,7 @@ void lcd_note_press(int pitch,int press){
 }
 
 void clear(){
+	lcd_draw_rectangle(165,80,185,100,RED);
 	for(int pitch=0;pitch<13;pitch++){
 		for(int index=1;index<75;index++){
 			lcd_stave_line(pitch,index,0);
@@ -251,6 +252,6 @@ void start(){
 	sta=1;
 }
 void stop(){
-	lcd_draw_rectangle(165,80,185,100,RED);
+	lcd_draw_rectangle(165,80,185,100,YELLOW);
 	sta=0;
 }

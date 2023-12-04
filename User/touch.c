@@ -30,8 +30,8 @@ void ctp_scan(){
 				}
 				if(dist(x,y,175,185)<=40){
 					state=0;
-					clear();
 					stop();
+					clear();
 				}
 			}
 		}

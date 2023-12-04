@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\atk_f103.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\atk_f103.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 20:24:13 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Dec 03 20:37:16 2023
 <BR><P>
 <H3>Maximum Stack Usage =       6452 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -553,8 +553,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
 </UL>
 <BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
 </UL>
 
 <P><STRONG><a name="[7f]"></a>__2sprintf</STRONG> (Thumb, 38 bytes, Stack size 32 bytes, __2sprintf.o(.text))
@@ -644,8 +644,8 @@ Global Symbols
 
 <P><STRONG><a name="[199]"></a>_memset_w</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)
 
-<P><STRONG><a name="[107]"></a>strcmp</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, strcmpv7m.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<P><STRONG><a name="[108]"></a>strcmp</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, strcmpv7m.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_numeric
 </UL>
 
@@ -669,7 +669,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrtf
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
 </UL>
 
 <P><STRONG><a name="[81]"></a>_printf_int_common</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, _printf_intcommon.o(.text))
@@ -1009,39 +1009,39 @@ Global Symbols
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_dma_init
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_init
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_init
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_ADC_MspInit
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SRAM_MspInit
 </UL>
 
-<P><STRONG><a name="[f6]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
+<P><STRONG><a name="[f7]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
 <BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_scan
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_ad
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_wait_ack
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_read_byte
 </UL>
 
-<P><STRONG><a name="[ef]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin))
+<P><STRONG><a name="[f0]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_write_byte
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_ad
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_nack
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_ack
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_nack
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_ack
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_nack
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_ack
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_nack
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_ack
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_wait_ack
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_stop
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_start
@@ -1085,7 +1085,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d1]"></a>HAL_NVIC_EnableIRQ</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, stm32f1xx_hal_cortex.o(i.HAL_NVIC_EnableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_dma_init
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 </UL>
@@ -1096,7 +1096,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_GetPriorityGrouping
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_dma_init
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
@@ -1191,8 +1191,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SRAM_Init
 </UL>
 
-<P><STRONG><a name="[100]"></a>HAL_SYSTICK_CLKSourceConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_CLKSourceConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+<P><STRONG><a name="[101]"></a>HAL_SYSTICK_CLKSourceConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_CLKSourceConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
 </UL>
 
 <P><STRONG><a name="[b4]"></a>HAL_SYSTICK_Config</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config))
@@ -1209,15 +1209,15 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
 </UL>
 
 <P><STRONG><a name="[c5]"></a>HAL_TIM_Base_MspInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_hal_tim.o(i.HAL_TIM_Base_MspInit))
 <BR><BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
 
-<P><STRONG><a name="[10a]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, stm32f1xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
-<BR><BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
+<P><STRONG><a name="[10b]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, stm32f1xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
 </UL>
 
 <P><STRONG><a name="[cb]"></a>HAL_UART_ErrorCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_hal_uart.o(i.HAL_UART_ErrorCallback))
@@ -1415,106 +1415,107 @@ Global Symbols
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_write
 </UL>
 
-<P><STRONG><a name="[eb]"></a>clear</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, lcd.o(i.clear))
+<P><STRONG><a name="[eb]"></a>clear</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, lcd.o(i.clear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = clear &rArr; lcd_stave_line &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 </UL>
 
-<P><STRONG><a name="[ee]"></a>ct_iic_ack</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_ack))
+<P><STRONG><a name="[ef]"></a>ct_iic_ack</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ct_iic_ack &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
 </UL>
 
-<P><STRONG><a name="[f2]"></a>ct_iic_init</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, ctiic.o(i.ct_iic_init))
+<P><STRONG><a name="[f3]"></a>ct_iic_init</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, ctiic.o(i.ct_iic_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = ct_iic_init &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
 </UL>
 
-<P><STRONG><a name="[f4]"></a>ct_iic_nack</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_nack))
+<P><STRONG><a name="[f5]"></a>ct_iic_nack</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_nack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ct_iic_nack &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
 </UL>
 
-<P><STRONG><a name="[f5]"></a>ct_iic_read_byte</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, ctiic.o(i.ct_iic_read_byte))
+<P><STRONG><a name="[f6]"></a>ct_iic_read_byte</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, ctiic.o(i.ct_iic_read_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ct_iic_read_byte &rArr; ct_iic_nack &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_nack
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_ack
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_nack
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_ack
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
 </UL>
 
-<P><STRONG><a name="[f7]"></a>ct_iic_send_byte</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, ctiic.o(i.ct_iic_send_byte))
+<P><STRONG><a name="[f8]"></a>ct_iic_send_byte</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, ctiic.o(i.ct_iic_send_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ct_iic_send_byte &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
 </UL>
 
-<P><STRONG><a name="[f8]"></a>ct_iic_start</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_start))
+<P><STRONG><a name="[f9]"></a>ct_iic_start</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ct_iic_start &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
 </UL>
 
-<P><STRONG><a name="[f3]"></a>ct_iic_stop</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_stop))
+<P><STRONG><a name="[f4]"></a>ct_iic_stop</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_stop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
 </UL>
 
-<P><STRONG><a name="[f9]"></a>ct_iic_wait_ack</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, ctiic.o(i.ct_iic_wait_ack))
+<P><STRONG><a name="[fa]"></a>ct_iic_wait_ack</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, ctiic.o(i.ct_iic_wait_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
 </UL>
 
 <P><STRONG><a name="[138]"></a>ctp_init</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, touch.o(i.ctp_init))
@@ -1523,22 +1524,22 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[fa]"></a>ctp_scan</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, touch.o(i.ctp_scan))
+<P><STRONG><a name="[fb]"></a>ctp_scan</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, touch.o(i.ctp_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = ctp_scan &rArr; clear &rArr; lcd_stave_line &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[ff]"></a>delay_init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, delay.o(i.delay_init))
+<P><STRONG><a name="[100]"></a>delay_init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, delay.o(i.delay_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_CLKSourceConfig
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SYSTICK_CLKSourceConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1546,13 +1547,13 @@ Global Symbols
 <P><STRONG><a name="[ea]"></a>delay_ms</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, delay.o(i.delay_ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = delay_ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
 <BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_adjust
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_scan
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_write_one_byte
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_ex_st7796_reginit
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_ex_st7789_reginit
@@ -1562,140 +1563,140 @@ Global Symbols
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_ex_ili9341_reginit
 </UL>
 
-<P><STRONG><a name="[f1]"></a>delay_us</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, delay.o(i.delay_us))
+<P><STRONG><a name="[f2]"></a>delay_us</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, delay.o(i.delay_us))
 <BR><BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_write_byte
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_ad
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_delay
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_ex_ssd1963_reginit
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_ex_nt35510_reginit
 </UL>
 
-<P><STRONG><a name="[fb]"></a>dist</STRONG> (Thumb, 40 bytes, Stack size 32 bytes, touch.o(i.dist))
+<P><STRONG><a name="[fc]"></a>dist</STRONG> (Thumb, 40 bytes, Stack size 32 bytes, touch.o(i.dist))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = dist &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 </UL>
 
 <P><STRONG><a name="[4e]"></a>fputc</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usart.o(i.fputc))
 <BR>[Address Reference Count : 1]<UL><LI> _printf_char_file.o(.text)
 </UL>
-<P><STRONG><a name="[102]"></a>ft5206_init</STRONG> (Thumb, 298 bytes, Stack size 32 bytes, ft5206.o(i.ft5206_init))
+<P><STRONG><a name="[103]"></a>ft5206_init</STRONG> (Thumb, 298 bytes, Stack size 32 bytes, ft5206.o(i.ft5206_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
 <LI>Call Chain = ft5206_init &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_init
 </UL>
 
-<P><STRONG><a name="[104]"></a>ft5206_rd_reg</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, ft5206.o(i.ft5206_rd_reg))
+<P><STRONG><a name="[105]"></a>ft5206_rd_reg</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, ft5206.o(i.ft5206_rd_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = ft5206_rd_reg &rArr; ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_scan
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
 </UL>
 
 <P><STRONG><a name="[54]"></a>ft5206_scan</STRONG> (Thumb, 404 bytes, Stack size 32 bytes, ft5206.o(i.ft5206_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = ft5206_scan &rArr; ft5206_rd_reg &rArr; ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_rd_reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touch_1.o(i.tp_init)
 </UL>
-<P><STRONG><a name="[103]"></a>ft5206_wr_reg</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, ft5206.o(i.ft5206_wr_reg))
+<P><STRONG><a name="[104]"></a>ft5206_wr_reg</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, ft5206.o(i.ft5206_wr_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = ft5206_wr_reg &rArr; ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
 </UL>
 
-<P><STRONG><a name="[105]"></a>gt9xxx_init</STRONG> (Thumb, 324 bytes, Stack size 32 bytes, gt9xxx.o(i.gt9xxx_init))
+<P><STRONG><a name="[106]"></a>gt9xxx_init</STRONG> (Thumb, 324 bytes, Stack size 32 bytes, gt9xxx.o(i.gt9xxx_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
 <LI>Call Chain = gt9xxx_init &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_init
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_init
 </UL>
 
-<P><STRONG><a name="[106]"></a>gt9xxx_rd_reg</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, gt9xxx.o(i.gt9xxx_rd_reg))
+<P><STRONG><a name="[107]"></a>gt9xxx_rd_reg</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, gt9xxx.o(i.gt9xxx_rd_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = gt9xxx_rd_reg &rArr; ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_scan
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
 </UL>
 
 <P><STRONG><a name="[53]"></a>gt9xxx_scan</STRONG> (Thumb, 732 bytes, Stack size 32 bytes, gt9xxx.o(i.gt9xxx_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = gt9xxx_scan &rArr; gt9xxx_wr_reg &rArr; ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_wr_reg
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_rd_reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touch_1.o(i.tp_init)
 </UL>
-<P><STRONG><a name="[108]"></a>gt9xxx_wr_reg</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, gt9xxx.o(i.gt9xxx_wr_reg))
+<P><STRONG><a name="[109]"></a>gt9xxx_wr_reg</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, gt9xxx.o(i.gt9xxx_wr_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = gt9xxx_wr_reg &rArr; ct_iic_wait_ack &rArr; ct_iic_stop &rArr; ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_scan
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
 </UL>
 
-<P><STRONG><a name="[109]"></a>gtim_timx_int_init</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, gtim.o(i.gtim_timx_int_init))
+<P><STRONG><a name="[10a]"></a>gtim_timx_int_init</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, gtim.o(i.gtim_timx_int_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = gtim_timx_int_init &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[10b]"></a>iic_ack</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, myiic.o(i.iic_ack))
+<P><STRONG><a name="[10c]"></a>iic_ack</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, myiic.o(i.iic_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iic_ack &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_read_byte
 </UL>
@@ -1709,11 +1710,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_init
 </UL>
 
-<P><STRONG><a name="[10d]"></a>iic_nack</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, myiic.o(i.iic_nack))
+<P><STRONG><a name="[10e]"></a>iic_nack</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, myiic.o(i.iic_nack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iic_nack &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_read_byte
 </UL>
@@ -1721,11 +1722,11 @@ Global Symbols
 <P><STRONG><a name="[e6]"></a>iic_read_byte</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, myiic.o(i.iic_read_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = iic_read_byte &rArr; iic_nack &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_nack
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_ack
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_nack
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_ack
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_read_one_byte
 </UL>
@@ -1733,8 +1734,8 @@ Global Symbols
 <P><STRONG><a name="[e4]"></a>iic_send_byte</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, myiic.o(i.iic_send_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = iic_send_byte &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_write_one_byte
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_read_one_byte
@@ -1743,8 +1744,8 @@ Global Symbols
 <P><STRONG><a name="[e3]"></a>iic_start</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, myiic.o(i.iic_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iic_start &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_write_one_byte
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_read_one_byte
@@ -1753,8 +1754,8 @@ Global Symbols
 <P><STRONG><a name="[e7]"></a>iic_stop</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, myiic.o(i.iic_stop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iic_stop &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_wait_ack
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_init
@@ -1765,21 +1766,21 @@ Global Symbols
 <P><STRONG><a name="[e5]"></a>iic_wait_ack</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, myiic.o(i.iic_wait_ack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = iic_wait_ack &rArr; iic_stop &rArr; iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_delay
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_stop
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_write_one_byte
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_read_one_byte
 </UL>
 
-<P><STRONG><a name="[10e]"></a>lcd_buttons_init</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, lcd.o(i.lcd_buttons_init))
+<P><STRONG><a name="[10f]"></a>lcd_buttons_init</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, lcd.o(i.lcd_buttons_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = lcd_buttons_init &rArr; lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1787,7 +1788,7 @@ Global Symbols
 <P><STRONG><a name="[112]"></a>lcd_char_init</STRONG> (Thumb, 678 bytes, Stack size 6096 bytes, lcd.o(i.lcd_char_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 6196<LI>Call Chain = lcd_char_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1813,30 +1814,30 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
 
-<P><STRONG><a name="[10f]"></a>lcd_draw_circle</STRONG> (Thumb, 106 bytes, Stack size 56 bytes, lcd_1.o(i.lcd_draw_circle))
+<P><STRONG><a name="[110]"></a>lcd_draw_circle</STRONG> (Thumb, 106 bytes, Stack size 56 bytes, lcd_1.o(i.lcd_draw_circle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
+<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_draw_touch_point
 </UL>
 
-<P><STRONG><a name="[110]"></a>lcd_draw_line</STRONG> (Thumb, 172 bytes, Stack size 68 bytes, lcd_1.o(i.lcd_draw_line))
+<P><STRONG><a name="[111]"></a>lcd_draw_line</STRONG> (Thumb, 172 bytes, Stack size 68 bytes, lcd_1.o(i.lcd_draw_line))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
+<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_init
 <LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_sections_init
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_logo_init
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_char_init
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_draw_touch_point
 </UL>
 
@@ -1846,26 +1847,27 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_ram_prepare
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_set_cursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
-<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
+<BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_draw_touch_point
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_show_char
 </UL>
 
-<P><STRONG><a name="[111]"></a>lcd_draw_rectangle</STRONG> (Thumb, 106 bytes, Stack size 44 bytes, lcd_1.o(i.lcd_draw_rectangle))
+<P><STRONG><a name="[ec]"></a>lcd_draw_rectangle</STRONG> (Thumb, 106 bytes, Stack size 44 bytes, lcd_1.o(i.lcd_draw_rectangle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_spectrum_set_height
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_spectrum_init
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_init
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
 </UL>
 
 <P><STRONG><a name="[11b]"></a>lcd_ex_ili9341_reginit</STRONG> (Thumb, 556 bytes, Stack size 8 bytes, lcd_1.o(i.lcd_ex_ili9341_reginit))
@@ -1901,7 +1903,7 @@ Global Symbols
 <P><STRONG><a name="[120]"></a>lcd_ex_nt35510_reginit</STRONG> (Thumb, 3836 bytes, Stack size 8 bytes, lcd_1.o(i.lcd_ex_nt35510_reginit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lcd_ex_nt35510_reginit &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_reg
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_regno
 </UL>
@@ -1912,7 +1914,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lcd_ex_ssd1963_reginit &rArr; delay_ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_regno
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_data
 </UL>
@@ -1954,7 +1956,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SRAM_Init
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_reg
@@ -1977,7 +1979,7 @@ Global Symbols
 <P><STRONG><a name="[129]"></a>lcd_logo_init</STRONG> (Thumb, 98 bytes, Stack size 1112 bytes, lcd.o(i.lcd_logo_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1212<LI>Call Chain = lcd_logo_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1986,15 +1988,15 @@ Global Symbols
 <P><STRONG><a name="[12a]"></a>lcd_note_init</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, lcd.o(i.lcd_note_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = lcd_note_init &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[ed]"></a>lcd_note_press</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, lcd.o(i.lcd_note_press))
+<P><STRONG><a name="[ee]"></a>lcd_note_press</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, lcd.o(i.lcd_note_press))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_note
@@ -2014,7 +2016,7 @@ Global Symbols
 <P><STRONG><a name="[12c]"></a>lcd_sections_init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lcd.o(i.lcd_sections_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = lcd_sections_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2050,7 +2052,7 @@ Global Symbols
 <P><STRONG><a name="[12f]"></a>lcd_spectrum_init</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, lcd.o(i.lcd_spectrum_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = lcd_spectrum_init &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2058,7 +2060,7 @@ Global Symbols
 <P><STRONG><a name="[130]"></a>lcd_spectrum_set_height</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, lcd.o(i.lcd_spectrum_set_height))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = lcd_spectrum_set_height &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2078,17 +2080,17 @@ Global Symbols
 <P><STRONG><a name="[132]"></a>lcd_stave_init</STRONG> (Thumb, 310 bytes, Stack size 936 bytes, lcd.o(i.lcd_stave_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1036<LI>Call Chain = lcd_stave_init &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[ec]"></a>lcd_stave_line</STRONG> (Thumb, 214 bytes, Stack size 40 bytes, lcd.o(i.lcd_stave_line))
+<P><STRONG><a name="[ed]"></a>lcd_stave_line</STRONG> (Thumb, 214 bytes, Stack size 40 bytes, lcd.o(i.lcd_stave_line))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = lcd_stave_line &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_update
@@ -2097,7 +2099,7 @@ Global Symbols
 <P><STRONG><a name="[133]"></a>lcd_stave_note</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd.o(i.lcd_stave_note))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = lcd_stave_note &rArr; lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
 </UL>
 <BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_notes
 </UL>
@@ -2105,7 +2107,7 @@ Global Symbols
 <P><STRONG><a name="[134]"></a>lcd_stave_update</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, lcd.o(i.lcd_stave_update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = lcd_stave_update &rArr; lcd_stave_line &rArr; lcd_draw_line &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
+<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_line
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2155,7 +2157,7 @@ Global Symbols
 <P><STRONG><a name="[135]"></a>led_init</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, led.o(i.led_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = led_init &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -2167,7 +2169,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_init
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_stm32_clock_init
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stop
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_update
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_init
@@ -2179,10 +2181,10 @@ Global Symbols
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_char_init
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_buttons_init
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gtim_timx_int_init
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_init
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cmplx_mag_f32
 <LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cfft_radix4_init_f32
@@ -2208,7 +2210,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = search_notes &rArr; lcd_stave_note &rArr; lcd_note_press &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
 <BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_stave_note
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_note_press
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfcmple
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
@@ -2217,14 +2219,14 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[101]"></a>sqrt</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, sqrt.o(i.sqrt))
+<P><STRONG><a name="[102]"></a>sqrt</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, sqrt.o(i.sqrt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
 </UL>
 
 <P><STRONG><a name="[77]"></a>sqrtf</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, sqrtf.o(i.sqrtf))
@@ -2236,20 +2238,20 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cmplx_mag_f32
 </UL>
 
-<P><STRONG><a name="[fd]"></a>start</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, lcd.o(i.start))
+<P><STRONG><a name="[fe]"></a>start</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, lcd.o(i.start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = start &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 </UL>
 
-<P><STRONG><a name="[fe]"></a>stop</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd.o(i.stop))
+<P><STRONG><a name="[ff]"></a>stop</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd.o(i.stop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = stop &rArr; lcd_draw_rectangle &rArr; lcd_draw_point &rArr; lcd_set_cursor &rArr; lcd_wr_regno
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_rectangle
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -2276,7 +2278,7 @@ Global Symbols
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 </UL>
@@ -2304,8 +2306,8 @@ Global Symbols
 <LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_get_adjust_data
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_adjust
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_xy
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gt9xxx_init
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_init
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;at24cxx_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touch_1.o(.data)
@@ -2323,7 +2325,7 @@ Global Symbols
 <P><STRONG><a name="[56]"></a>tp_scan</STRONG> (Thumb, 292 bytes, Stack size 32 bytes, touch_1.o(i.tp_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = tp_scan &rArr; tp_read_xy2 &rArr; tp_read_xy &rArr; tp_read_xoy &rArr; tp_read_ad &rArr; tp_write_byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_xy2
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
@@ -2344,7 +2346,7 @@ Global Symbols
 <P><STRONG><a name="[68]"></a>_get_lc_numeric</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lc_numeric_c.o(locale$$code))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _get_lc_numeric
 </UL>
-<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_lc_numeric_2
 </UL>
@@ -2396,9 +2398,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d5]"></a>__aeabi_i2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt))
-<BR><BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<BR><BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dist
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_adjust
 <LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 </UL>
@@ -2406,17 +2408,17 @@ Global Symbols
 <P><STRONG><a name="[1a5]"></a>_dflt</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt), UNUSED)
 
 <P><STRONG><a name="[119]"></a>__aeabi_ui2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu))
-<BR><BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<BR><BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
 <LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_ssd_backlight_set
 </UL>
 
 <P><STRONG><a name="[1a6]"></a>_dfltu</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu), UNUSED)
 
-<P><STRONG><a name="[fc]"></a>__aeabi_cdcmple</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dleqf.o(x$fpl$dleqf))
+<P><STRONG><a name="[fd]"></a>__aeabi_cdcmple</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dleqf.o(x$fpl$dleqf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_cdcmple
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctp_scan
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_adjust
 </UL>
 
@@ -2475,7 +2477,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
 </UL>
 
 <P><STRONG><a name="[d7]"></a>__aeabi_dsub</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, daddsub_clz.o(x$fpl$dsub))
@@ -2733,13 +2735,13 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
 
-<P><STRONG><a name="[10c]"></a>iic_delay</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, myiic.o(i.iic_delay))
+<P><STRONG><a name="[10d]"></a>iic_delay</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, myiic.o(i.iic_delay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_nack
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_ack
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_nack
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_ack
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_wait_ack
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_stop
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_start
@@ -2747,18 +2749,18 @@ Local Symbols
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_read_byte
 </UL>
 
-<P><STRONG><a name="[f0]"></a>ct_iic_delay</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_delay))
+<P><STRONG><a name="[f1]"></a>ct_iic_delay</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, ctiic.o(i.ct_iic_delay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ct_iic_delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_nack
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_ack
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_wait_ack
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_stop
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_start
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_send_byte
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_read_byte
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_nack
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ct_iic_ack
 </UL>
 
 <P><STRONG><a name="[145]"></a>tp_adjust_info_show</STRONG> (Thumb, 284 bytes, Stack size 64 bytes, touch_1.o(i.tp_adjust_info_show))
@@ -2776,8 +2778,8 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = tp_draw_touch_point &rArr; lcd_draw_circle &rArr; sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_point
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_adjust
 </UL>
@@ -2785,9 +2787,9 @@ Local Symbols
 <P><STRONG><a name="[14a]"></a>tp_read_ad</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, touch_1.o(i.tp_read_ad))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = tp_read_ad &rArr; tp_write_byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_write_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_xoy
@@ -2821,8 +2823,8 @@ Local Symbols
 <P><STRONG><a name="[14b]"></a>tp_write_byte</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, touch_1.o(i.tp_write_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = tp_write_byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
 <BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_read_ad
 </UL>

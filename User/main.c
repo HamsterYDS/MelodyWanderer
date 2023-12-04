@@ -125,9 +125,7 @@ void search_notes(){
 	
 	if(index==16 || index==17) lcd_stave_note(0);
 	if(index==18 || index==19) lcd_stave_note(1);
-	if(index==21) {
-		if(fft_out[22]>maxMag*0.85 || fft_out[23]>maxMag*0.85) lcd_stave_note(3);
-		else lcd_stave_note(2);
+	if(index==21) lcd_stave_note(2);
 	if(index==22 || index==23) lcd_stave_note(3);
 	if(index==25) lcd_stave_note(4);
 	if(index==28 || index==29) lcd_stave_note(5);
